@@ -1,0 +1,31 @@
+start:
+  - play morningBGM:
+  - show room: WITH FADE CONTINUE
+  - show alice: happy AT CENTER WITH FADE
+  - alice says: Hallo! Willkommen bei (bold)RenJS!(end)
+  - wait: 300
+  - alice says normal: Bist Du bereit, eine großartige, interaktive Geschichte zu erfinden?
+  - choice:
+    - "Ja, natürlich!":
+      - alice says happy: Großartig! Weiter so!
+    - "Noch nicht!":
+      - alice says angry: Okay, ich bin hier, wenn Du bereit bist!
+  - alice says normal: Wenn Du neu bist, spiele erst einmal das (bold)Tutorial(end) durch, wo Deuzilene und ihre Freunde Dir alles zeigen, was Du über RenJS wissen mußt.
+  - alice says happy: Aber wenn Du schon Erfahrung mit RenJS besitzt, dann fange einfach an!
+  - scene: endGame
+
+endGame:
+  - alice says normal: Ende, Gelände!
+  - hide ALL:
+  - effect ROLLINGCREDITS:
+    endGame: true
+    text:
+      - Thanks for playing
+      - The Quickstart Game
+      - null
+      - background art by
+      - DreamStudio
+      - null
+      - characters by
+      - Scenario
+      
