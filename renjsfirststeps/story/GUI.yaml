@@ -1,7 +1,7 @@
 name: Quickstart
 resolution:
   - 800
-  - 600
+  - 450
 assetCounter: 44
 config:
   hud:
@@ -28,7 +28,7 @@ config:
       type: messageBox
       asset: asset19
       x: 40
-      'y': 449
+      'y': 310
       sfx: none
       text:
         x: 24
@@ -48,7 +48,7 @@ config:
       type: nameBox
       asset: asset20
       x: 84
-      'y': 400
+      'y': 260
       text:
         x: 0
         'y': 0
@@ -65,48 +65,48 @@ config:
       asset: asset22
     - type: button
       x: 646
-      'y': 474
+      'y': 324
       asset: asset24
       binding: openMenu
       menu: settings
     - type: button
       x: 688
-      'y': 474
+      'y': 324
       asset: asset23
       binding: openMenu
       menu: saveload
     - type: button
       x: 646
-      'y': 514
+      'y': 364
       asset: asset26
       binding: auto
     - type: button
       x: 688
-      'y': 514
+      'y': 364
       asset: asset25
       binding: skip
   menus:
     main:
       - type: image
         x: 0
-        'y': 0
+        'y': -70
         asset: loaderbackground
       - type: music
         asset: Evan_Schaeffer_-_01_-_Aqueduct
       - type: button
         x: 77
-        'y': 452
+        'y': 352
         asset: asset3
         binding: openMenu
         menu: saveload
       - type: button
         x: 329
-        'y': 452
+        'y': 352
         asset: asset4
         binding: start
       - type: button
         x: 529
-        'y': 452
+        'y': 352
         asset: asset5
         binding: openMenu
         menu: settings
@@ -195,7 +195,7 @@ config:
         mask: horizontal
       - type: button
         x: 616
-        'y': 506
+        'y': 360
         asset: asset17
         binding: return
     saveload:
@@ -281,7 +281,7 @@ config:
         slot: '2'
       - type: button
         x: 616
-        'y': 506
+        'y': 360
         asset: asset17
         binding: return
 assets:

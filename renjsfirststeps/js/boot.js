@@ -1,7 +1,7 @@
 const RenJSConfig =  {
   'name': 'Quickstart',
   'w': 800,
-  'h': 600,
+  'h': 450,
   'renderer': Phaser.AUTO, // become renderer
   'scaleMode': Phaser.ScaleManager.SHOW_ALL,
   'loadingScreen': {
@@ -10,7 +10,7 @@ const RenJSConfig =  {
       'asset': 'assets/gui/loaderloading-bar.png',
       'position': {
         'x': 109,
-        'y': 458
+        'y': 358
       },
       'size': {
         'w': 578,
