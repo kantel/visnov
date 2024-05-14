@@ -1,5 +1,5 @@
 const RenJSConfig =  {
-  'name': 'Quickstart',
+  'name': 'Alice und RenJS',
   'w': 800,
   'h': 450,
   'renderer': Phaser.AUTO, // become renderer

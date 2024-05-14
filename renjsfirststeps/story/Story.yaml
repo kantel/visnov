@@ -1,5 +1,4 @@
 start:
-  - play morningBGM:
   - show room: WITH FADE CONTINUE
   - show alice: happy AT CENTER WITH FADE
   - alice says: Hallo! Willkommen bei (bold)RenJS!(end)
@@ -21,11 +20,11 @@ endGame:
     endGame: true
     text:
       - Thanks for playing
-      - The Quickstart Game
+      - Quickstart mit Alice
       - null
       - background art by
       - DreamStudio
       - null
-      - characters by
+      - character by
       - Scenario
       

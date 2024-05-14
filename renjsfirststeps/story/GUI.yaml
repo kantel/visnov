@@ -1,4 +1,4 @@
-name: Quickstart
+name: Alice und RenJS
 resolution:
   - 800
   - 450
@@ -9,7 +9,7 @@ config:
       type: choices
       asset: asset31
       x: 42
-      'y': 300
+      'y': 240
       alignment: centered
       separation: 10
       sfx: none
@@ -61,7 +61,7 @@ config:
           boundsAlignV: middle
     - type: image
       x: 640
-      'y': 468
+      'y': 318
       asset: asset22
     - type: button
       x: 646
@@ -91,8 +91,6 @@ config:
         x: 0
         'y': -70
         asset: loaderbackground
-      - type: music
-        asset: Evan_Schaeffer_-_01_-_Aqueduct
       - type: button
         x: 77
         'y': 352
@@ -364,7 +362,7 @@ assets:
       name: asset31
       fileName: hudasset31.png
       w: 716
-      h: 45
+      h: 65
     asset32:
       name: asset32
       fileName: hudasset32.png
