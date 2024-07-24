@@ -67,26 +67,28 @@ monogatari.assets ('scenes', {
 
 // Define the Characters
 monogatari.characters ({
-	"lilly": {
-		name: "Lilly",
-		color: '#5bcaff'
+	"hatter": {
+		name: "Mad Hatter",
+		color: '#5bcaff',
+		sprites: {normal: "madhatter.png"}
 	}
-});
+});	
 
 monogatari.script ({
 	// The game starts here.
 	'Start': [
 		'show scene zauberwald with fadein',
-			'lilly Hallo {{p.name}}, Willkommen im Zauberwald!',
+		"show character hatter normal at right with fadein",
+			'hatter Hallo {{p.name}}, Willkommen in meinem Zauberwald!',
 		{
 			'Choice': {
-				'Dialog': 'lilly Have you already read some documentation?',
+				'Dialog': 'hatter Hast Du Dich schon durch die Dokumentation gewühlt?',
 				'Yes': {
-					'Text': 'Yes',
+					'Text': 'Ja, ich war schon so neugierig!',
 					'Do': 'jump Yes'
 				},
 				'No': {
-					'Text': 'No',
+					'Text': 'Nein, ich hatte bisher noch keine Zeit gefunden!',
 					'Do': 'jump No'
 				}
 			}
@@ -94,20 +96,24 @@ monogatari.script ({
 	],
 
 	'Yes': [
-		'lilly Thats awesome!',
-		'lilly Then you are ready to go ahead and create an amazing Game!',
-		'lilly I can’t wait to see what story you’ll tell!',
-		'end'
+		'hatter Großartig!',
+		'hatter Dann bist Du ja bereit, ein grandioses Spiel zu erstellen!',
+		'hatter Ich kann es kaum erwarten, dies zu sehen!',
+		'jump End'
 	],
 
 	'No': [
 
-		'lilly You can do it now.',
+		'hatter Dann wühle Dich jetzt dadurch.',
 
 		'show message Help',
 
-		'lilly Go ahead and create an amazing Game!',
-		'lilly I can’t wait to see what story you’ll tell!',
-		'end'
+		'hatter Auf, auf, erstelle nun ein grandioses Spiel!',
+		'hatter Ich kann es kaum erwarten, dies zu sehen!',
+		'jump End'
+	],
+
+	"End": [
+		"hatter Das ist der Beginn einer wunderbaren Freundschaft."
 	]
 });
